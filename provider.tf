@@ -6,10 +6,10 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "s3-backend-buckett"
-    key = "micky/configuration/default.tfstate"
-    encrypt = true
-    region = "eu-west-1"
+    bucket         = "s3-backend-buckett"
+    key            = "micky/configuration/default.tfstate"
+    encrypt        = true
+    region         = "eu-west-1"
     dynamodb_table = "lock-terraform-state-db"
   }
 }
